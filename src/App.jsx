@@ -10,7 +10,7 @@ const NotFound = () => {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Header />}>
+    <Route path="/movie/" element={<Header />}>
       <Route index element={<MovieFinder />} />
       <Route path="/movie/:id" element={<Movie />} />
       <Route element={<NotFound />} />
@@ -26,4 +26,3 @@ function App() {
   );
 }
 export default App;
-
